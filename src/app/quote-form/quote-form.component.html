@@ -5,6 +5,7 @@
 
                 <label for="name">Quote</label>
                 <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+                
                 Display: {{newQuote.name}}
             
 
@@ -15,7 +16,7 @@
             </div>
             <div class="form-group">
 
-                <label for="author">Author</label>
+                <label for="author">Author's Name</label>
                 <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="name" required>
                
 
@@ -39,3 +40,4 @@
         </form>
     </div>
 </div>
+&copy;2020 John
