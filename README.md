@@ -1,6 +1,6 @@
-Project name:
+Project name: Quotes Repository
 
-Quotes Repository
+Powered by: AngularJS
 
 Project description: The application takes user quotes (Author, Quote, Date and Submitted) of the user, then displays the details for users to vote. The user can delete a quote.
 
