@@ -21,7 +21,8 @@
         <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
         
 
-        <app-quote-details *ngIf="quote.showAuthor" [quote]='quote'></app-quote-details>    
+        <app-quote-details *ngIf="quote.showAuthor" [quote]='quote'></app-quote-details>  
+        Name: {{customer.name}} Address: {{customer.address}}  
 </ul>
 </div>
 
