@@ -8,11 +8,11 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-  new Quote (1, 'There is only one way to happiness and that is to cease worrying about things which are beyond the power of our will.', 'Epictetus', 'John'),
-  new Quote(2, 'The two most powerful warriors are patience and time.', 'Leo Tolstoy',"General Kutuzov"),
-  new Quote(3, 'Time is money', 'Benjamin Franklin',"B.K"),
-  new Quote(4, 'The galaxy is large.', 'F.G Randos',"P.S"),
-  new Quote(5, 'The universe is expanding.', 'I.J Persons',"Q.T"),
+  new Quote ('JP', 'There is only one way to happiness and that is to cease worrying about things which are beyond the power of our will.', 'Epictetus'),
+  new Quote('JP', 'The two most powerful warriors are patience and time.', 'Leo Tolstoy'),
+  new Quote('JP', 'Time is money', 'Benjamin Franklin'),
+  new Quote('JP','The galaxy is large.', 'F.G Randos'),
+  new Quote('JP', 'The universe is expanding.', 'I.J Persons'),
   ];
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
