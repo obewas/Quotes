@@ -14,7 +14,7 @@
 <div class="container">
 <div class="row" *ngFor="let quote of quotes;let i = 'index'">
 <ul>
-        <li >{{quote.name}}</li> 
+        <li >{{quote.quote}}</li> 
         <button (click)='toogleDetails(i)'>Show Author</button>
         <button class="btn btn-info" (click)="upvote(i)">Upvote</button>
         <button class="btn btn-info" (click)="downvote(i)">Downvote</button>
