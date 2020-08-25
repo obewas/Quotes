@@ -1,39 +1,8 @@
-<p>{{quote.author}} </p>
-
-
-<p></p>
-
-    <div class="four wide column center aligned votes">
-      <div class="ui statistic">
-        
-        <div class="value">
-          {{ votes }}
-        </div> 
-        <div class="label">
-          Votes:
-        </div>
-    
-      </div>
-    
-    </div>
-    
-    <div class="twelve wide column">
-    
-      <ul class="ui big horizontal list voters">
-        <li class="item">
-          <a href (click)="likeVote()">
-          <i class="fa fa-thumbs-up"></i>
-            upvote
-          </a>
-        </li>
-    
-        <li class="item">
-          <a href (click)="dislikeVote()">
-          <i class="fa-thumbs-down"></i>
-            downvote
-          </a>
-        </li>
-    
-      </ul>
-      
-    </div>
+<div class="card-body">
+  <p>Quote Author:{{quote.author}}</p>
+  <p>Submitterr:{{quote.name}}</p>
+  <p>No.of Upvotes: {{quote.upvotes}}</p>
+  <p>No.of Downvotes:{{quote.downvotes}}</p>
+  <p>Date submitted:{{quote.completeDate|date}}</p>
+  
+</div>

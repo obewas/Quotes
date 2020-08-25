@@ -16,6 +16,9 @@
 <ul>
         <li >{{quote.name}}</li> 
         <button (click)='toogleDetails(i)'>Show Author</button>
+        <button class="btn btn-info" (click)="upvote(i)">Upvote</button>
+        <button class="btn btn-info" (click)="downvote(i)">Downvote</button>
+        <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
         
 
         <app-quote-details *ngIf="quote.showAuthor" [quote]='quote'></app-quote-details>    
