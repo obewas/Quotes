@@ -14,10 +14,8 @@ export class QuoteComponent implements OnInit {
   new Quote('JP','The galaxy is large.', 'F.G Randos'),
   new Quote('JP', 'The universe is expanding.', 'I.J Persons'),
   ];
-  addNewQuote(quote){
-    let quoteLength = this.quotes.length;
-    quote.id=quoteLength+1
-    this.quotes.unshift(quote)
+  addNewQuote(addedQuote){
+    this.quotes.push(addedQuote)
   }
   upvote(i) {
     this.quotes[i].upvotes ++;

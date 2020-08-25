@@ -1,4 +1,4 @@
-import { DateCountPipe } from '../date-count.pipe.spec';
+import { DateCountPipe } from './date-count.pipe';
 
 describe('DateCountPipe', () => {
   it('create an instance', () => {
