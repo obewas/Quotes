@@ -4,7 +4,7 @@
             <div class="form-group">
 
                 <label for="name">Quote</label>
-                <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" (change)="log(newQuote.name)" required>
+                <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                     <p> Type a Quote... :) </p>              
                 </div> 
@@ -30,13 +30,10 @@
 
             </div>
             <div class="form-group">
-
-                <label for="complete">Date Submitted</label>
-                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
-                <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-                  <p>Date is required</p>
-                </div>
+                <label for="date">Date posted</label>
+                <input type="datetime-local" name="date" id="date">
             </div>
+            
             <button type="submit" class="btn btn-success btn-lg">Submit Quote!</button>
         </form>
     </div>
