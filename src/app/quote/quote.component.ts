@@ -19,6 +19,7 @@ export class QuoteComponent implements OnInit {
     quote.id=quoteLength+1
     this.quotes.unshift(quote)
   }
+  
   toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor
   }
