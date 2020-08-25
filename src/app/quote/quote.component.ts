@@ -19,10 +19,29 @@ export class QuoteComponent implements OnInit {
     quote.id=quoteLength+1
     this.quotes.unshift(quote)
   }
-  
-  toggleDetails(index){
-    this.quotes[index].showAuthor = !this.quotes[index].showAuthor
+  upvote(i) {
+    this.quotes[i].upvotes ++;
   }
+  downvote(i) {
+    this.quotes[i].downvotes ++
+  }
+  deleteQuote(i) {
+    this.quotes.splice(i, 1)
+  }
+  initNumber:number
+  lastNumber:number
+  count:number
+  topVote(){
+    this.initNumber = 0
+    this.lastNumber = 0
+
+    for(this.count=0 ; this.count < this.quotes.length; this.count++){
+      this.lastNumber = this.quotes[this.count].upvotes;
+      if(this.lastNumber > this.initNumber){this.initNumber = this.lastNumber}
+    }
+    return this.initNumber
+  }
+
   constructor() { }
 
   ngOnInit(): void {
