@@ -29,6 +29,12 @@
         <app-quote-details *ngIf="quote.showAuthor" [quote]='quote'></app-quote-details>  
          
 </ul>
-</div>
+<ul>
+    </div *ngFor='let vote of votes; let i = index'>
+    <li appHighlight>{{quote.upvotes}}</li>
+       
+        <app-highlight *ngIf='quote.upvotes'[quote]='quote' (isHighest)='Math.max.apply($event.i)'></app-highlight>
 
-</div>
+    </div>
+</ul>
+
